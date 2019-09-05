@@ -1,0 +1,143 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/home-default";
+
+.informacao-sorteio{
+	@media #{$lg}{
+		background-size: 100% 100%;
+	}
+	.row{
+		position: relative;
+	}
+}
+.mensagem{
+	padding-top: 20px;
+	text-align: center;
+	@media #{$md}{
+		padding-top: 50px;
+	}
+}
+.box-mensagem{
+	background-image: url('../img/bg-info-sorteio.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% 100%;
+	padding: 20px;
+	transform-origin: center center;
+	transform: rotate(2deg);
+	max-width: 330px;
+	display: inline-block;
+	text-align: left;
+	h2{
+		margin: 0;
+		text-transform: uppercase;
+		font-family: Louis-Italic;
+		&:first-child{
+			width: 70%;
+			margin-bottom: 30px;
+			position: relative;
+			font-size: 1.9em;
+			line-height: 1.1;
+			@media #{$sm}{
+				font-size: 2.3em;
+			}
+			@media #{$lg}{
+				font-size: 2.7em;
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				bottom: -8px;
+				right: -80px;
+				width: 2.8em;
+				height: 2.8em;
+				background-image: url('../img/icon-congrats.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+				mix-blen-mode: multiply;
+			}
+		}
+		&:nth-child(2){
+			width: 60%;
+			display: block;
+			margin: 0 auto 30px;
+			@media #{$sm}{
+				font-size: 2em;
+			}
+			@media #{$lg}{
+				font-size: 2.4em;
+			}
+			span{
+				&:first-child{
+					font-size: 2em;
+					color: $amarelo;
+					mix-blend-mode:multiply;
+					line-height: 1;
+				}
+				&:nth-child(2){
+					font-size: 0.85em;
+					line-height: 1.1;
+					display: inline-block;
+					text-indent: 12px;
+					margin-left: -4px;
+				}
+				&:last-child{
+					font-size: 1.9em;
+					color: $amarelo;
+					mix-blend-mode:multiply;
+					display: block;
+					line-height: 0.8;
+					margin-left: 0.8em;
+				}
+			}
+		}
+		&:last-child{
+			font-size: 2.2em;
+			line-height: 1;
+			margin-bottom: 30px;
+			@media #{$sm}{
+				font-size: 2.8em;
+			}
+			@media #{$sm}{
+				font-size: 3.3em;
+			}
+			span{
+				color: $amarelo;
+				mix-blend-mode: multiply;
+			}
+		}
+	}
+	h3 span:last-child {
+		font-size: 1.9em;
+		color: #ffb80e;
+		mix-blend-mode: multiply;
+		display: block;
+		line-height: 0.8;
+		margin-left: 0.8em;
+	}
+}
+
+.carro{
+	width: 100%;
+	transform: scale(-1, 1);
+	margin-top: -20px;
+}
+
+.info-cadastro-nf{
+	width: 100%;
+}
+
+.premios-promocao{
+	overflow: visible;
+	img{
+		width: 100%;
+		margin-top: -30px;
+		@media #{$md}{
+			margin-top: 0;
+		}
+	}
+}
+
+@import "button-switch";

@@ -1,0 +1,260 @@
+.home {
+  background-image: url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .home {
+    background-image: url("../img/bg-home.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.inicio-row {
+  position: relative;
+}
+
+.form-cadastro {
+  margin-top: 70px;
+}
+@media (min-width: 992px) {
+  .form-cadastro {
+    -webkit-transform: translateY(25px);
+        -ms-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+@media (min-width: 1200px) {
+  .form-cadastro {
+    margin-top: 80px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 450px) {
+  .form-cadastro {
+    margin-top: 50px;
+  }
+}
+.form-cadastro img {
+  width: 100%;
+}
+.form-cadastro form {
+  margin-top: 20px;
+}
+.form-cadastro form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: Louis-Italic;
+  padding: 10px 15px;
+}
+@media (min-width: 1200px) {
+  .form-cadastro form input {
+    margin-bottom: 10px;
+  }
+}
+.form-cadastro form button {
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/btn-enviar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  font-size: 1.3em;
+  padding: 0 0 20px;
+}
+
+.info-promocao img {
+  width: 100%;
+}
+.info-promocao img.desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .info-promocao img.desktop {
+    display: block;
+  }
+  .info-promocao img.mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .carro-home {
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+@media (min-width: 1200px) {
+  .carro-home {
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .carro-home {
+    -webkit-transform: translateY(-65px);
+        -ms-transform: translateY(-65px);
+            transform: translateY(-65px);
+    margin-top: -120px;
+  }
+}
+.carro-home img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .carro-home img {
+    width: 180%;
+    float: right;
+    margin-right: -50px;
+  }
+}
+
+.lojas-participantes {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .lojas-participantes {
+    -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .lojas-participantes {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+@media (min-width: 1200px) {
+  .lojas-participantes {
+    -webkit-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+}
+.lojas-participantes p {
+  font-family: Louis-Italic;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .lojas-participantes p {
+    text-align: right;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    width: auto;
+  }
+}
+.lojas-participantes img {
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .lojas-participantes img {
+    height: 35px;
+  }
+}
+.lojas-participantes img:nth-of-type(1) {
+  height: 30px;
+}
+.lojas-participantes img:nth-of-type(2) {
+  margin: 0 15px;
+}
+
+.button-switch {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .button-switch {
+    display: none;
+  }
+}
+.button-switch .field {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.button-switch input[type=checkbox] {
+  display: none;
+}
+.button-switch input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 22px;
+  height: 40px;
+  border: 1px solid #4a4d52;
+  border-radius: 16px;
+}
+.button-switch input[type=checkbox] + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #4a4d52;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.button-switch input[type=checkbox]:checked + label:after {
+  -webkit-transform: translateY(18px);
+      -ms-transform: translateY(18px);
+          transform: translateY(18px);
+}
+.button-switch input[type=checkbox]:checked + label {
+  transition: all 0.4s;
+}

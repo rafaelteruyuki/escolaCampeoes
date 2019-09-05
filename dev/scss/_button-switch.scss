@@ -1,0 +1,52 @@
+.button-switch{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	@media (max-width: 767px){
+		display: none;
+	}
+
+	.field{
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+
+	input[type=checkbox]{
+		display: none;
+	}
+
+	input[type=checkbox] + label{
+		display: block;
+		position: relative;
+		cursor: pointer;
+		outline: none;
+		user-select: none;
+		width: 22px;
+		height: 40px;
+		border: 1px solid $cinza;
+		border-radius: 16px;
+
+	}
+
+	input[type=checkbox] + label:after{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		background-color: $cinza;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		transition: all 0.4s;
+	}
+
+	input[type=checkbox]:checked + label:after{
+		transform: translateY(18px);
+	}
+
+	input[type=checkbox]:checked + label{
+		transition: all 0.4s;
+	}
+}

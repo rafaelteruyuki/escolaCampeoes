@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+
+.premiacao{
+	background-image: url('../img/bg-premiacao.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	width: 100%;
+
+	@media #{$sm}{
+		padding-top: 130px;
+		padding-bottom: 0;
+		div.row{
+			position: relative;
+		}
+	}
+}
+
+.titulo-premiacao{
+	text-align: center;
+	img{
+		width: 80%;
+	}
+}
+
+.carro-premiacao{
+	margin-top: -90px;
+	position: relative;
+	img{
+		width: 100%;
+		&.onix-detalhe{
+			margin: 20px 0;
+		}
+		&.desktop{
+			width: 45%;
+			position: absolute;
+			bottom: 30px;
+			right: -35%;
+		}
+	}
+	p{
+		font-family: Louis-Italic;
+		color: $branco;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		margin-top: -25px;
+		margin-bottom: 0;
+		@include textShadow;
+		@media (max-width: 550px){
+			font-size: 0.52em;
+		}
+		@media #{$sm}{
+			margin-top: -50px;
+			margin-bottom: 50px;
+			padding: 0px 30px;
+			width: 95%;
+		}
+	}
+}
+
+.chamada-premiacao{
+	@media #{$sm}{
+		position: absolute;
+		top: 50px;
+		right: 0;
+	}
+	img{
+		width: 100%;
+	}
+}

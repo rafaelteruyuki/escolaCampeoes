@@ -1,0 +1,75 @@
+.premiacao {
+  background-image: url("../img/bg-premiacao.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .premiacao {
+    padding-top: 130px;
+    padding-bottom: 0;
+  }
+  .premiacao div.row {
+    position: relative;
+  }
+}
+
+.titulo-premiacao {
+  text-align: center;
+}
+.titulo-premiacao img {
+  width: 80%;
+}
+
+.carro-premiacao {
+  margin-top: -90px;
+  position: relative;
+}
+.carro-premiacao img {
+  width: 100%;
+}
+.carro-premiacao img.onix-detalhe {
+  margin: 20px 0;
+}
+.carro-premiacao img.desktop {
+  width: 45%;
+  position: absolute;
+  bottom: 30px;
+  right: -35%;
+}
+.carro-premiacao p {
+  font-family: Louis-Italic;
+  color: #ffffff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-top: -25px;
+  margin-bottom: 0;
+  text-shadow: 0px 2px 5px #000;
+}
+@media (max-width: 550px) {
+  .carro-premiacao p {
+    font-size: 0.52em;
+  }
+}
+@media (min-width: 768px) {
+  .carro-premiacao p {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 0px 30px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .chamada-premiacao {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+}
+.chamada-premiacao img {
+  width: 100%;
+}

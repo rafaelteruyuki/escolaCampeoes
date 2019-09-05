@@ -1,0 +1,124 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/home-default";
+
+.form-cadastro{
+	margin-top: 70px;
+	@media #{$md}{
+		transform: translateY(25px);
+	}
+
+	@media #{$lg}{
+		margin-top: 80px;
+		transform: none;
+		padding: 0 40px;
+	}
+	@media (max-width: 450px){
+		margin-top: 50px;
+	}
+	img{
+		width: 100%;
+	}
+	form{
+		margin-top: 20px;
+		input{
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+			font-family: Louis-Italic;
+			padding: 10px 15px;
+			@media #{$lg}{
+				margin-bottom: 10px;
+			}
+		}
+		button{
+			@include btnImgAmarelo;
+		}
+	}
+}
+
+.info-promocao{
+	img{
+		width: 100%;
+		&.desktop{
+			display: none;
+		}
+		@media #{$sm}{
+			&.desktop{
+				display: block;
+			}
+			&.mobile{
+				display: none;
+			}
+		}
+	}
+}
+
+.carro-home{
+	@media #{$sm}{
+		transform: translateY(-20px);
+	}
+	@media #{$lg}{
+		transform: translateY(30px);
+	}
+	@media (max-width: 991px) and (min-width: 768px){
+		transform: translateY(-65px);
+		margin-top: -120px;
+	}
+	img{
+		width: 100%;
+		@media #{$lg}{
+			width: 180%;
+			float: right;
+			margin-right: -50px;
+		}
+	}
+}
+
+.lojas-participantes{
+	text-align: center;
+	@media #{$sm}{
+		transform: translateY(100px);
+	}
+	@media (max-width: 991px) and (min-width: 768px){
+		transform: none;
+	}
+	@media #{$lg}{
+		transform: translateY(-40px);
+	}
+	p{
+		font-family: Louis-Italic;
+		text-transform: uppercase;
+		text-align: center;
+		border-bottom: 1px solid #333;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
+
+		@media #{$sm}{
+			text-align: right;
+			padding-bottom: 5px;
+			font-size: 1.2em;
+			left: auto;
+			transform: none;
+			width: auto;
+		}
+	}
+	img{
+		height: 40px;
+		@media #{$sm}{
+			height: 35px;
+		}
+		&:nth-of-type(1){
+			height: 30px;
+		}
+		&:nth-of-type(2){
+			margin: 0 15px;
+		}
+	}
+}
+
+@import "button-switch";

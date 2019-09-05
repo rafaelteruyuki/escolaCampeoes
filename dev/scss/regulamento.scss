@@ -1,0 +1,92 @@
+@import "variables";
+@import "mixins";
+
+.regulamento{
+	background-image: url('../img/bg-regulamento.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	width: 100%;
+
+	@media #{$sm}{
+		padding-top: 130px;
+	}
+
+	h2{
+		font-family: Louis-Italic;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		font-size: 2em;
+		color: $cinza;
+		@media #{$sm}{
+			font-size: 3em;
+		}
+	}
+}
+
+@import "mCSB-theme";
+
+.box-regulamento{
+	color: $cinza;
+	height: 550px;
+	position: relative;
+	a{
+		color: $cinza;
+		font-style: italic;
+		&:hover{
+		}
+	}
+	ol{
+		counter-reset: section;
+		list-style-type: none;
+		padding-left: 0;
+		font-size: 0.9em;
+		@media #{$sm}{
+			font-size: 1em;
+		}
+		li{
+			margin-top: 20px;
+			margin-left: 20px;
+			font-weight:bold;
+			&::before{
+				counter-increment: section;
+				content: counters(section,".") ". ";
+				font-weight: bold;
+			}
+			ol{
+				li{
+					font-weight: normal;
+					margin-top: 5px;
+				}
+			}
+		}
+		p{
+			display: inline;
+		}
+		table{
+			border-collapse:collapse;
+			font-weight: normal;
+			margin-top: 10px;
+			caption{
+				margin-bottom: 10px;
+				font-weight: bold;
+			}
+			thead{
+				font-weight: bold;
+			}
+			tfoot{
+				font-weight: bold;
+			}
+			td{
+				padding:5px;
+				border: 1px solid #CCC;
+				&:first-child{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

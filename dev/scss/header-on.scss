@@ -1,0 +1,394 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/header-default";
+
+.logo{
+	@media #{$sm}{
+		text-align: left;
+	}
+}
+.btn-menu{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	@media #{$md}{
+		display: none;
+	}
+}
+
+#nav-icon4 {
+	width: 35px;
+	height: auto;
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	transform: rotate(0deg) translateY(-50%);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	span {
+		display: block;
+		position: relative;
+		height: 3px;
+		width: 100%;
+		background: $branco;
+		border-radius: 6px;
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: all .25s ease-in-out;
+
+		&:nth-child(1) {
+			transform-origin: left center;
+		}
+		&:nth-child(2) {
+			margin: 9px 0;
+			transform-origin: left center;
+		}
+		&:nth-child(3) {
+			transform-origin: left center;
+		}
+	}
+
+	&.open span{
+		&:nth-child(1) {
+			transform: rotate(45deg);
+			// top: 0;
+			// left: 0;
+		}
+		&:nth-child(2) {
+			width: 0%;
+			opacity: 0;
+		}
+		&:nth-child(3) {
+			transform: rotate(-45deg);
+			// top: 0;
+			// left: 0;
+		}
+	}
+}
+
+.menu{
+	display: none;
+	@media #{$md}{
+		display: block;
+		height: 90px;
+		padding-left: 0;
+	}
+	ul.menu-logado{
+		text-align: left;
+		padding-left: 15px;
+		@media #{$sm}{
+			border-left: 1px solid $branco;
+		}
+		@media #{$md}{
+			border-left: none;
+			position: relative;
+			height: 90px;
+			padding-top: 12px;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 105%;
+				height: 123%;
+				display: block;
+				background-image: url('../img/bg-menu-logado.png');
+				background-position: top right;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				z-index: -1;
+			}
+		}
+		p{
+			margin: 0 0 15px 0;
+		}
+		a{
+			position: relative;
+			@media #{$md}{
+				text-shadow: none;
+			}
+			&:hover{
+				text-shadow: none;
+				font-size: inherit;
+				text-decoration: underline;
+			}
+			&::before{
+				content: "";
+				position: relative;
+				top: 0;
+				left: 0;
+				height: 1.3em;
+				width: 1.3em;
+				display: inline-block;
+				margin-right: 10px;
+				background-position: center center;
+				background-size: 95% 95%;
+				background-repeat: no-repeat;
+				vertical-align: top;
+				@media #{$md}{
+					content: none;
+				}
+			}
+			&.perfil::before{
+				background-image: url('../img/perfil.svg');
+			}
+			&.cupons::before{
+				background-image: url('../img/cupons.svg');
+			}
+			&.sair::before{
+				background-image: url('../img/sair-bco.svg');
+			}
+		}
+
+		li{
+			margin-bottom: 10px;
+			@media #{$sm}{
+				margin-right: 15px;
+				margin-left: 0;
+			}
+			@media #{$md}{
+				text-align: center;
+				&::before{
+					content: "";
+					position: relative;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					height: 2.3em;
+					width: 2.3em;
+					display: block;
+					margin-right: 10px;
+					margin-bottom: 12px;
+					background-position: center center;
+					background-size: 95% 95%;
+					background-repeat: no-repeat;
+					vertical-align: top;
+				}
+				&.perfil{
+					margin-right: 14px;
+					@media #{$lg}{
+						margin-right: 15px;
+					}
+					&::before{
+						background-image: url('../img/perfil.svg');
+					}
+				}
+				&.cupons{
+					margin-right:6px;
+					&::before{
+						background-image: url('../img/cupons.svg');
+					}
+				}
+				&.sair{
+					a{
+						color: #333333;
+					}
+					&::before{
+						background-image: url('../img/sair.svg');
+					}
+				}
+			}
+			&:first-child{
+				text-shadow: 0px 2px 5px #000;
+				color: $amarelo;
+				display: block;
+				@media #{$md}{
+					display: inline-block;
+					text-shadow: none;
+					color: $cinza;
+					font-family: Louis-BoldItalic;
+					font-size: 1.3em;
+					text-transform: uppercase;
+					margin-right: 29px;
+					text-align: left;
+					&::before{
+						content: none;
+					}
+				}
+				@media #{$lg}{
+					margin-right: 32px;
+				}
+			}
+		}
+
+	}
+
+	ul.menu-principal{
+		text-align: right;
+		border-right: 1px solid $branco;
+		padding-right: 15px;
+		@media #{$sm}{
+			border-right: none;
+			margin-top: 30px;
+		}
+		@media #{$md}{
+			margin-top: 0;
+			text-align: center;
+		}
+	}
+	ul{
+		padding: 0;
+		margin: 15px 0;
+		@media #{$sm}{
+			font-size: 1.3em;
+		}
+		@media #{$md}{
+			margin: 0;
+			position: relative;
+			top:50%;
+			transform: translateY(-50%);
+			font-size: 1em;
+		}
+		li{
+			list-style-type: none;
+			margin: 5px 0;
+			color: $branco;
+			line-height: 1.2;
+			@media #{$sm}{
+				display: inline-block;
+				margin-left: 15px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+			a{
+				color: $branco;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-shadow: 0px 2px 5px #000;
+				@media #{$md}{
+					transition: 0.3s;
+					&:hover{
+						text-shadow: 0px 6px 7px #000;
+						font-size: 1.05em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.link-ativo{
+	text-shadow: 0px 6px 7px #000 !important;
+	font-size: 1.05em !important;
+	color: $amarelo !important;
+}
+
+@media (max-width: 991px){
+	.form-login-desktop{
+		display: none;
+	}
+	.form-login-mobile{
+			display: block;
+	}
+}
+
+@media #{$md}{
+	.form-login-desktop{
+		display: block;
+	}
+	.form-login-mobile{
+		display: none;
+	}
+}
+
+.form-login{
+	position: relative;
+	padding-left: 35px;
+	padding-right: 25px;
+	overflow: visible;
+	@media #{$md}{
+		position: absolute;
+		right: 0;
+		padding-left: 20px;
+		padding-right: 12px;
+		width: 29%;
+	}
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 125%;
+		width: 108%;
+		background-image: url('../img/bg-login.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: top right;
+		z-index: 0;
+	}
+
+	h2{
+		margin: 0 15px;
+		text-transform: uppercase;
+		color: $cinza;
+		margin-top: 15px;
+		position: relative;
+		z-index: 2;
+		@media #{$md}{
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+
+	form{
+		padding: 10px 15px 20px;
+		position: relative;
+		z-index: 2;
+		@media #{$md}{
+			padding-top: 0;
+			padding-left: 5px;
+			padding-right: 5px;
+			&::after{
+				content: "";
+				@include clearfix;
+			}
+		}
+	}
+
+	input{
+		width: 100%;
+		@media #{$md}{
+			width: calc(50% - 5px);
+		}
+		&[name=senha]{
+			margin-top: 10px;
+			@media #{$md}{
+				margin-top: 0;
+				float: right;
+			}
+		}
+		&[name=cpf]{
+			text-transform: uppercase;
+		}
+	}
+
+	a{
+		width: 100%;
+		display: block;
+		color: $cinza;
+		font-family: Louis-Italic;
+		margin: 10px 0;
+		@media #{$md}{
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+
+	button{
+		@include btn-basic();
+		width: 100%;
+		@media #{$md}{
+			float: right;
+			margin-top: 10px;
+		}
+	}
+
+	@media #{$md}{
+		a, button{
+			width: calc(50% - 5px);
+		}
+	}
+
+}

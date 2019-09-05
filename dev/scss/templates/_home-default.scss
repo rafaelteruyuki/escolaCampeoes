@@ -1,0 +1,27 @@
+.home{
+	background-image: url('../img/bg-home-mobile-pattern.jpg');
+	background-size: 25%;
+	background-repeat: repeat;
+	padding-top: 70px;
+	padding-bottom: 50px;
+
+	@media #{$md}{
+		background-image: url('../img/bg-home.jpg');
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+
+	@media #{$sm}{
+		padding-top: 90px;
+		padding-bottom: 0;
+	}
+
+	@media (max-width: 768px){
+		width: 100%;
+	}
+}
+
+.inicio-row{
+	position: relative;
+}

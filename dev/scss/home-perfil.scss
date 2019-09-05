@@ -1,0 +1,253 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/home-default";
+
+.perfil{
+	@media #{$lg}{
+		background-size: 100% 100%;
+	}
+	.row{
+		position: relative;
+	}
+}
+
+.titulo-perfil{
+	@media #{$sm}{
+		padding-top: 10px;
+	}
+	img{
+		width: 103%;
+		max-width: 400px;
+		@media #{$sm}{
+			width: 230%;
+			float: right;
+			max-width: inherit;
+		}
+		@media #{$md}{
+			width: 130%;
+			margin-right: 160px;
+		}
+		@media #{$lg}{
+			width: 160%;
+			margin-right: 110px;
+		}
+	}
+}
+
+.form-perfil{
+	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 60%,rgba(255,255,255,0) 100%);
+	background-clip: content-box;
+	position: relative;
+	z-index: 3;
+	form{
+		padding: 30px 15px 0;
+
+		label, legend{
+			font-family: Louis-Italic;
+			font-size: 0.9em;
+			text-transform: uppercase;
+			text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
+
+			@media #{$md}{
+				font-size: 1em;
+			}
+		}
+
+		input{
+			display: block;
+			width: 100%;
+			font-family: Louis-Italic;
+			padding: 5px 10px;
+			font-size: 0.9em;
+			&[name=nome], &[name=cpf], &[name=email], &[name=telefone], &[name=celular], &[name=senha-atual], &[name=senha], &[name=senha-confirma], &[name=cep], &[name=endereco], &[name=numero], &[name=complemento], &[name=bairro], &[name=cidade]{
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+				-webkit-appearance: none;
+			}
+
+			&[type=checkbox], &[type=radio]{
+				display: none;
+			}
+		}
+
+		select{
+			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+			background-color: #ffffff;
+			background-image: url('../img/down-arrow.svg');
+			background-repeat: no-repeat;
+			background-position: center right;
+			background-size: auto 50%;
+			background-origin: content-box;
+			width: 80px;
+			padding: 5px 10px;
+			border-radius: 0;
+			border: none;
+			outline: none;
+			display: block;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			cursor: pointer;
+		}
+
+		.password-fields{
+			font-size: 1.1em;
+			line-height: 1.5;
+			border: 1px solid $cinza;
+			padding: 15px;
+
+			@media #{$md}{
+				font-size: 1.3em;
+			}
+
+			p{
+				font-size: 0.7em;
+				color: red;
+				margin: 0;
+				text-align: left;
+				margin-top: 10px;
+				@media #{$md}{
+					width: 100%;
+					float: none;
+					text-align: right;
+				}
+			}
+
+			label{
+				display: inline-block;
+				width: 100%;
+				font-size: 0.5em;
+				font-family: Louis-BoldItalic;
+				&:nth-of-type(2){
+					margin: 5px 0;
+					@media #{$md}{
+						margin: 0 5%;
+					}
+				}
+				@media #{$md}{
+					width: 27%;
+				}
+			}
+
+			input{
+				@media #{$md}{
+					margin-top: 5px;
+					font-size: 1.5em;
+				}
+			}
+
+		}
+
+		.user-fields{
+			margin: 25px 0;
+			display: inline-block;
+			width: 100%;
+
+			label{
+				width: 100%;
+				display: inline-block;
+				margin-bottom: 5px;
+				&[for=cpf], &[for=email]{
+					position: relative;
+					&::before{
+						content: "";
+						position: absolute;
+						top: 15px;
+						right: 10px;
+						width: 10px;
+						height: 10px;
+						background-image: url('../img/icon-lock.png');
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: contain;
+						z-index: 2;
+					}
+				}
+			}
+
+			@media #{$md}{
+				label{
+					display: inline-block;
+					font-size: 1.2em;
+					margin-bottom: 20px;
+					&[for=nome]{
+						width: 60%;
+						margin-right: 5%;
+					}
+					&[for=cpf]{
+						width: 30%;
+					}
+					&[for=email]{
+						width: 95%;
+					}
+
+					&[for=telefone], &[for=celular]{
+						width: 44%;
+					}
+					&[for=telefone]{
+						margin-right: 6%;
+					}
+					&[for=cep]{
+						width: calc(30% - 15px);
+					}
+					&[for=endereco]{
+						width: calc(65% - 15px);
+						margin-left: 30px;
+					}
+
+					&[for=numero]{
+						width: calc(20% - 20px);
+					}
+					&[for=complemento]{
+						width: calc(45% - 20px);
+						margin-left: 30px;
+					}
+					&[for=bairro]{
+						width: calc(30% - 20px);
+						margin-left: 30px;
+					}
+
+					&[for=cidade]{
+						width: calc(50%);
+					}
+					&[for=estado]{
+						width: 40%;
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+
+		.button-wapper{
+			width: 100%;
+			text-align: center;
+			button{
+				@include btnImgAmarelo;
+				margin-top: 20px;
+				@media #{$sm}{
+					max-width: 330px;
+				}
+			}
+		}
+
+	}
+}
+
+.info-promocao{
+	@media #{$sm}{
+		padding: 0;
+		margin-top: 40px;
+	}
+	img{
+		width: 100%;
+		@media #{$sm}{
+			width: 115%;
+			float: left;
+			transform: translateX(-20px);
+		}
+		@media #{$md}{
+			width: 120%;
+			transform: none;
+		}
+	}
+}

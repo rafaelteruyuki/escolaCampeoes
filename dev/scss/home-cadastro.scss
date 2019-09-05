@@ -1,0 +1,341 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/home-default";
+
+.home{
+	padding-top: 90px;
+	padding-bottom: 0;
+	@media #{$md}{
+		background-size: 100% 100%;
+	}
+}
+.titulo-cadastro{
+	@media #{$sm}{
+		padding-top: 10px;
+	}
+	img{
+		width: 103%;
+		max-width: 400px;
+		@media #{$sm}{
+			width: 230%;
+			float: right;
+			max-width: inherit;
+		}
+		@media #{$md}{
+			width: 130%;
+			margin-right: 160px;
+		}
+		@media #{$lg}{
+			width: 160%;
+			margin-right: 110px;
+		}
+	}
+}
+.form-cadastro{
+	background: linear-gradient(to bottom, rgba(255,255,255,0.8) 60%,rgba(255,255,255,0) 100%);
+	background-clip: content-box;
+	position: relative;
+	z-index: 3;
+	form{
+		padding: 30px 15px 0;
+
+		label, legend{
+			font-family: Louis-Italic;
+			font-size: 0.9em;
+			text-transform: uppercase;
+			text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
+
+			@media #{$md}{
+				font-size: 1em;
+			}
+		}
+
+		input{
+			display: block;
+			width: 100%;
+			font-family: Louis-Italic;
+			padding: 5px 10px;
+			font-size: 0.9em;
+			height: 30px;
+			&[name=senha], &[name=confirmaSenha], &[name=cep],
+			&[name=endereco], &[name=numero], &[name=complemento],
+			&[name=bairro], &[name=cidade]{
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+				-webkit-appearance: none;
+			}
+
+			&[type=checkbox], &[type=radio]{
+				display: none;
+			}
+		}
+
+		select{
+			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+			background-color: #ffffff;
+			background-image: url('../img/down-arrow.svg');
+			background-repeat: no-repeat;
+			background-position: center right;
+			background-size: auto 50%;
+			background-origin: content-box;
+			width: 80px;
+			height: 30px;
+			padding: 5px 10px;
+			border-radius: 0;
+			border: none;
+			outline: none;
+			display: block;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			cursor: pointer;
+		}
+
+		.password-fields{
+			font-size: 1.1em;
+			line-height: 1.5;
+
+			@media #{$md}{
+				font-size: 1.3em;
+			}
+
+			p{
+				font-size: 0.7em;
+				color: red;
+				margin: 0;
+				text-align: left;
+				margin-top: 10px;
+				@media #{$md}{
+					width: calc(50% - 10px);
+					float: right;
+				}
+			}
+
+			label{
+				display: inline-block;
+				width: 100%;
+				&:nth-of-type(2){
+					margin: 5px 0;
+					@media #{$md}{
+						margin: 0;
+					}
+				}
+				@media #{$md}{
+					width: calc(48% - 10px);
+					&:nth-of-type(2){
+						margin-left: 20px;
+					}
+				}
+			}
+
+			input{
+				@media #{$md}{
+					margin-top: 10px;
+				}
+			}
+
+		}
+
+		.user-fields{
+			margin: 25px 0;
+			display: inline-block;
+			width: 100%;
+
+			label{
+				vertical-align: top;
+			}
+
+			@media #{$md}{
+				label{
+					display: inline-block;
+					font-size: 1.2em;
+					margin-bottom: 20px;
+					&[for=cep]{
+						width: calc(28% - 15px);
+					}
+					&[for=endereco]{
+						width: calc(68% - 15px);
+						margin-left: 30px;
+					}
+
+					&[for=numero]{
+						width: calc(20% - 20px);
+					}
+					&[for=complemento]{
+						width: calc(48% - 20px);
+						margin-left: 25px;
+					}
+					&[for=bairro]{
+						width: calc(30% - 20px);
+						margin-left: 20px;
+					}
+
+					&[for=cidade]{
+						width: calc(50%);
+					}
+					&[for=estado]{
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+
+		.declaracao-flieds{
+			margin: 10px 0;
+			font-size: 0.7em;
+
+			@media #{$md}{
+				display: inline-block;
+				width: calc(40% - 15px);
+				font-size: 1.2em;
+			}
+
+			input[type=checkbox] + label{
+				display: block;
+				position: relative;
+				cursor: pointer;
+				padding-left: 25px;
+			}
+
+			input[type=checkbox] + label::before{
+				content: "";
+				position: absolute;
+				display: inline-block;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				line-height: 1;
+				background-color: $branco;
+				border-radius: 3px;
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+			}
+
+			input[type=checkbox]:checked + label::after{
+				content: "";
+				position: absolute;
+				top: 3px;
+				left: 3px;
+				width: 14px;
+				height: 14px;
+				background-color: $amarelo;
+				border-radius: 2px;
+			}
+		}
+
+		.pergunta-fields{
+			margin-top: 20px;
+
+			@media #{$md}{
+				display: inline-block;
+				width: calc(45% - 15px);
+				margin-left: 60px;
+			}
+
+			legend{
+				font-family: Louis-BoldItalic;
+				text-transform: uppercase;
+				line-height: 1.3;
+				margin-bottom: 10px;
+				@media #{$md}{
+					font-size: 1.2em;
+					line-height: normal;
+				}
+			}
+
+			input[type=radio] + label{
+				display: inline-block;
+				position: relative;
+				cursor: pointer;
+				padding-left: 25px;
+				padding-top: 2px;
+				font-size: 0.7em;
+				@media #{$md}{
+					font-size: 1em;
+				}
+				&:nth-of-type(1){
+					margin-right: 20px;
+					font-family: Louis-BoldItalic;
+				}
+			}
+			input[type=radio] + label::before{
+				content: "";
+				position: absolute;
+				display: inline-block;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				line-height: 1;
+				background-color: $branco;
+				border-radius: 3px;
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+			}
+			input[type=radio]:checked + label::after{
+				content: "";
+				position: absolute;
+				top: 3px;
+				left: 3px;
+				width: 14px;
+				height: 14px;
+				background-color: $amarelo;
+				border-radius: 2px;
+			}
+		}
+
+		.button-wapper{
+			width: 100%;
+			text-align: center;
+			button{
+				@include btnImgAmarelo;
+				margin-top: 20px;
+				@media #{$sm}{
+					max-width: 330px;
+				}
+			}
+		}
+
+	}
+}
+
+.info-promocao{
+	@media #{$sm}{
+		padding: 0;
+	}
+	img{
+		width: 100%;
+		@media #{$sm}{
+			width: 115%;
+			float: left;
+			transform: translateX(-20px);
+		}
+		@media #{$md}{
+			width: 100%;
+			transform: none;
+		}
+	}
+}
+
+.carro{
+	position: relative;
+	z-index: 2;
+	@media #{$sm}{
+		margin-top: -150px;
+	}
+	@media #{$sm}{
+		margin-top: -80px;
+	}
+	@media #{$lg}{
+
+	}
+	img{
+		width: 100%;
+		@media #{$sm}{
+			width: 80%;
+			float: right;
+			margin-right: -110px;
+			margin-top: -45px;
+		}
+	}
+}
+@import "button-switch";

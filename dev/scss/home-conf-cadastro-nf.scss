@@ -1,0 +1,150 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/home-default";
+
+.conf-cadastro-nf{
+	@media #{$lg}{
+		background-size: 100% 100%;
+	}
+	.row{
+		position: relative;
+	}
+}
+
+.box-numeros-nf{
+	h2{
+		text-transform: uppercase;
+		font-family: Louis-Italic;
+		opacity: 0.8;
+		line-height: 1.2;
+		text-align: center;
+		@media #{$md}{
+			font-size: 3em;
+		}
+		@supports (mix-blend-mode: multiply){
+			opacity: 1;
+			mix-blend-mode: multiply;
+		}
+		span.first-word{
+			color: $amarelo;
+		}
+	}
+
+	table{
+		width: 100%;
+		max-width: 420px;
+		display: block;
+
+		font-family: Louis-BoldItalic;
+		font-size: 0.9em;
+		line-height: 1.5;
+		color: $branco;
+
+		border: 3px solid transparentize($amarelo, 0.5);
+		border-radius: 5px;
+		border-collapse: separate;
+
+		background-color: transparentize($cinza, 0.2);
+
+		padding: 20px 5px 20px;
+		margin: 0 auto;
+
+		@supports (mix-blend-mode: multiply){
+			border-color: transparentize($amarelo, 0.2);
+			background-color: $cinza;
+			mix-blend-mode: multiply;
+		}
+		@media #{$sm}{
+			font-size: 1.2em;
+			line-height: 1.8;
+		}
+		@media #{$md}{
+			display: inline-block;
+			font-size: 1.5em;
+			width: calc(90% - 5px);
+			margin-right: 10px;
+			vertical-align: top;
+		}
+
+		tbody{
+			width: 100%;
+			display: table;
+		}
+
+		td{
+			text-align: center;
+		}
+	}
+
+	button{
+		display:block;
+
+		&[name=print]{
+			width: 90px;
+			text-indent: -9999px;
+			padding: 5px 0;
+			border: none;
+			border-radius: 3px;
+			margin: 15px auto;
+
+			background-color: transparentize($amarelo, 0.3);
+			background-image: url('../img/icon-print.svg');
+			background-size: contain;
+			background-position: center center;
+			background-origin: content-box;
+			background-repeat: no-repeat;
+
+			appearance: none;
+			-webkit-appearance: none;
+			@media #{$md}{
+				width: calc(10% - 5px);
+				display: inline-block;
+				vertical-align: top;
+				padding: 25px 0;
+				margin: 0;
+			}
+		}
+		&[name=nova-nf]{
+			@include btnImgAmarelo;
+			@media #{$md}{
+				display: inline-block;
+				width: calc(50% - 10px);
+				margin-right: 10px;
+			}
+		}
+		&[name=finalizar]{
+			@include btnImgCinza;
+			@media #{$md}{
+				display: inline-block;
+				width: calc(50% - 10px);
+			}
+		}
+	}
+}
+
+.carro{
+	width: 100%;
+	transform: scale(-1, 1);
+	margin-top: -20px;
+}
+
+.info-cadastro-nf{
+	width: 100%;
+}
+
+.premios-promocao{
+	overflow: visible;
+	@media #{$md}{
+		margin-top: 70px;
+	}
+	img{
+		width: 100%;
+		margin-top: -30px;
+		@media #{$md}{
+			margin-top: 0;
+		}
+	}
+}
+
+@import "button-switch";

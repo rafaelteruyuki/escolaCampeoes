@@ -1,0 +1,49 @@
+.mCustomScrollbar{
+	background-color: transparentize($branco, 0.5);
+	border-radius: 8px;
+	padding: 20px 25px 20px 5px;
+	@media (max-width: 767px){
+		margin-right: 45px;
+	}
+}
+
+.mCS-escolaCampeoes{
+	&.mCSB_scrollTools{
+		right: -40px;
+		.mCSB_draggerRail{
+			background-color: $cinza;
+			width: 3px;
+		}
+		.mCSB_dragger{
+			.mCSB_dragger_bar{
+				background-image: url('../img/custom-icons.svg');
+				background-position: -24px center;
+				background-size: cover;
+				width: 25px;
+				height: 25px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		.mCSB_buttonUp{
+			background-image: url(../img/custom-icons.svg);
+			background-position: -1px center;
+			background-size: cover;
+			opacity: 1;
+			width: 24px;
+			height: 25px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.mCSB_buttonDown{
+			background-image: url(../img/custom-icons.svg);
+			background-position: -1px center;
+			background-size: cover;
+			width: 24px;
+			height: 25px;
+			left: 50%;
+			transform: translateX(-50%) rotate(180deg);
+		}
+	}
+}

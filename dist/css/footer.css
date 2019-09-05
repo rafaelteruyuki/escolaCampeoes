@@ -1,0 +1,116 @@
+.contato {
+  width: 100%;
+  background: linear-gradient(rgba(73, 76, 82, 0.8), rgba(73, 76, 82, 0.8)), url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding: 20px 0;
+}
+@supports (background-blend-mode: multiply) {
+  .contato {
+    background-image: url("../img/bg-home-mobile-pattern.jpg");
+    background-color: #4a4d52;
+    background-blend-mode: multiply;
+  }
+}
+@media (min-width: 768px) {
+  .contato {
+    padding-top: 50px;
+    background-size: 15%;
+  }
+}
+@media (min-width: 992px) {
+  .contato {
+    background-size: 10%;
+  }
+}
+.contato h3 {
+  font-family: Louis-Italic;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+.contato form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contato input, .contato textarea, .contato button {
+  width: 100%;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .contato fieldset {
+    width: calc(50% - 5px);
+  }
+}
+@media (min-width: 992px) {
+  .contato fieldset {
+    width: calc(42.5% - 5px);
+  }
+}
+.contato textarea {
+  resize: none;
+  height: 100px;
+  border-radius: 0;
+  border-color: transparent;
+}
+@media (min-width: 768px) {
+  .contato textarea {
+    width: calc(50% - 5px);
+    height: inherit;
+  }
+}
+@media (min-width: 992px) {
+  .contato textarea {
+    width: calc(42.5% - 5px);
+  }
+}
+.contato button {
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffb80e;
+  color: #ffffff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+@media (min-width: 992px) {
+  .contato button {
+    width: calc(15% - 5px);
+  }
+}
+.contato p {
+  color: #ffffff;
+  font-size: 0.7em;
+}
+.contato .fio-footer {
+  position: relative;
+  text-align: center;
+  height: 185px;
+}
+.contato .fio-footer::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #ffffff;
+  top: 0;
+  bottom: 0;
+}
+.contato .logo-footer {
+  text-align: center;
+}
+.contato .logo-footer img {
+  margin: 20px 0 10px;
+  display: inline-block;
+}

@@ -1,0 +1,115 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/home-default";
+
+.cupons-sem{
+	@media #{$md}{
+		background-image: url('../img/bg-cupons.jpg');
+	}
+	@media #{$lg}{
+		background-size: 100% 100%;
+	}
+	padding-bottom: 0;
+	.row{
+		position: relative;
+	}
+
+	.titulo-cupons{
+		padding-top: 20px;
+		img{
+			width: 100%;
+			max-width: 400px;
+			@media #{$sm}{
+				margin-right: 50%;
+				float: right;
+				max-width: inherit;
+			}
+			@media #{$md}{
+				width: 130%;
+				margin-right: 70%;
+			}
+				@media #{$lg}{
+					width: 135%;
+					margin-right: 90%;
+				}
+		}
+	}
+
+	.qtd-cupons{
+		div{
+			text-align: center;
+			mix-blend-mode:multiply;
+			@media #{$md}{
+				transform: translateX(-50px);
+			}
+		}
+		p{
+			display: inline-block;
+			width: calc(50% - 5px);
+			max-width: 200px;
+			vertical-align: middle;
+			text-transform: uppercase;
+			font-family: Louis-BoldItalic;
+			@media #{$sm}{
+				font-size: 2em;
+				width: calc(50% - 10px);
+			}
+			@media #{$md}{
+				font-size: 2.5em;
+				width: calc(50% - 10px);
+				max-width: inherit;
+			}
+			&:first-child{
+				text-align: right;
+				margin-right: 10px;
+				@media #{$sm}{
+					margin-right: 10px;
+					line-height: 1.2;
+				}
+				span{
+					color: $amarelo;
+				}
+			}
+			&:last-child{
+				border: 3px solid transparentize($amarelo, 0.5);
+				border-radius: 5px;
+				background-color: transparentize($cinza, 0.2);
+				padding: 10px 5px 10px;
+				color: $branco;
+				text-align: center;
+				font-family: Louis-Italic;
+				line-height: 1;
+				box-shadow: inset 3px 3px 7px 0px rgba(0, 0, 0, 0.3);
+
+				@supports (mix-blend-mode: multiply){
+					border-color: transparentize($amarelo, 0.2);
+					background-color: $cinza;
+				}
+
+				span{
+					font-size: 2.2em;
+					font-family: Louis-BoldItalic;
+				}
+			}
+		}
+	}
+
+	.carro-cupons{
+		margin-top: 15px;
+		text-align: center;
+		overflow: hidden;
+		img{
+			width: 100%;
+			max-width: 370px;
+			transform: scale(-1, 1);
+			@media #{$sm}{
+				max-width: 500px;
+			}
+			@media #{$md}{
+				transform: translateY(30px) scale(-1, 1);
+				max-width: inherit;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.contato {
+  width: 100%;
+  background: linear-gradient(rgba(73, 76, 82, 0.8), rgba(73, 76, 82, 0.8)), url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding: 20px 0;
+}
+@supports (background-blend-mode: multiply) {
+  .contato {
+    background-image: url("../img/bg-home-mobile-pattern.jpg");
+    background-color: #4a4d52;
+    background-blend-mode: multiply;
+  }
+}
+@media (min-width: 768px) {
+  .contato {
+    padding-top: 20px;
+    background-size: 15%;
+  }
+}
+@media (min-width: 992px) {
+  .contato {
+    background-size: 10%;
+  }
+}
+.contato p {
+  color: #ffffff;
+  font-size: 0.8em;
+}
+.contato .logo-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+.contato .logo-footer img {
+  margin: 0;
+  display: inline-block;
+  width: 60%;
+}
+@media (min-width: 768px) {
+  .contato .logo-footer img {
+    width: 100%;
+  }
+}

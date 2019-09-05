@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gCAAgC;EAC/B,gBAAgB,EAAE,iDAAiD;;;AAEpE,iCAAiC;EAChC,gBAAgB,EAAE,kDAAkD",
+"sources": ["../scss/logica-cupons.scss"],
+"names": [],
+"file": "logica-cupons.css"
+}

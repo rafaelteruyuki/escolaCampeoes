@@ -1,0 +1,445 @@
+.home {
+  background-image: url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .home {
+    background-image: url("../img/bg-home.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.inicio-row {
+  position: relative;
+}
+
+.home {
+  padding-top: 90px;
+  padding-bottom: 0;
+}
+@media (min-width: 992px) {
+  .home {
+    background-size: 100% 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo-cadastro {
+    padding-top: 10px;
+  }
+}
+.titulo-cadastro img {
+  width: 103%;
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .titulo-cadastro img {
+    width: 230%;
+    float: right;
+    max-width: inherit;
+  }
+}
+@media (min-width: 992px) {
+  .titulo-cadastro img {
+    width: 130%;
+    margin-right: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  .titulo-cadastro img {
+    width: 160%;
+    margin-right: 110px;
+  }
+}
+
+.form-cadastro {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
+  background-clip: content-box;
+  position: relative;
+  z-index: 3;
+}
+.form-cadastro form {
+  padding: 30px 15px 0;
+}
+.form-cadastro form label, .form-cadastro form legend {
+  font-family: Louis-Italic;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+@media (min-width: 992px) {
+  .form-cadastro form label, .form-cadastro form legend {
+    font-size: 1em;
+  }
+}
+.form-cadastro form input {
+  display: block;
+  width: 100%;
+  font-family: Louis-Italic;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+.form-cadastro form input[name=senha], .form-cadastro form input[name=senha-confirma], .form-cadastro form input[name=cep], .form-cadastro form input[name=endereco], .form-cadastro form input[name=numero], .form-cadastro form input[name=complemento], .form-cadastro form input[name=bairro], .form-cadastro form input[name=cidade] {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  -webkit-appearance: none;
+}
+.form-cadastro form input[type=checkbox], .form-cadastro form input[type=radio] {
+  display: none;
+}
+.form-cadastro form select {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  background-image: url("../img/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: auto 50%;
+  background-origin: content-box;
+  width: 80px;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.form-cadastro form .password-fields {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .password-fields {
+    font-size: 1.3em;
+  }
+}
+.form-cadastro form .password-fields p {
+  font-size: 0.7em;
+  color: red;
+  margin: 0;
+  text-align: left;
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .password-fields p {
+    width: calc(50% - 10px);
+    float: right;
+  }
+}
+.form-cadastro form .password-fields label {
+  display: inline-block;
+  width: 100%;
+}
+.form-cadastro form .password-fields label:nth-of-type(2) {
+  margin: 5px 0;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .password-fields label:nth-of-type(2) {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .form-cadastro form .password-fields label {
+    width: calc(50% - 10px);
+  }
+  .form-cadastro form .password-fields label:nth-of-type(2) {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .form-cadastro form .password-fields input {
+    margin-top: 10px;
+  }
+}
+.form-cadastro form .user-fields {
+  margin: 25px 0;
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .user-fields label {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .form-cadastro form .user-fields label[for=cep] {
+    width: calc(30% - 15px);
+  }
+  .form-cadastro form .user-fields label[for=endereco] {
+    width: calc(70% - 15px);
+    margin-left: 30px;
+  }
+  .form-cadastro form .user-fields label[for=numero] {
+    width: calc(20% - 20px);
+  }
+  .form-cadastro form .user-fields label[for=complemento] {
+    width: calc(50% - 20px);
+    margin-left: 30px;
+  }
+  .form-cadastro form .user-fields label[for=bairro] {
+    width: calc(30% - 20px);
+    margin-left: 30px;
+  }
+  .form-cadastro form .user-fields label[for=cidade] {
+    width: calc(50%);
+  }
+  .form-cadastro form .user-fields label[for=estado] {
+    margin-left: 30px;
+  }
+}
+.form-cadastro form .declaracao-flieds {
+  margin: 10px 0;
+  font-size: 0.7em;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .declaracao-flieds {
+    display: inline-block;
+    width: calc(40% - 15px);
+    font-size: 1.2em;
+  }
+}
+.form-cadastro form .declaracao-flieds input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+}
+.form-cadastro form .declaracao-flieds input[type=checkbox] + label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+.form-cadastro form .declaracao-flieds input[type=checkbox]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffb80e;
+  border-radius: 2px;
+}
+.form-cadastro form .pergunta-fields {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .pergunta-fields {
+    display: inline-block;
+    width: calc(45% - 15px);
+    margin-left: 60px;
+  }
+}
+.form-cadastro form .pergunta-fields legend {
+  font-family: Louis-BoldItalic;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .pergunta-fields legend {
+    font-size: 1.2em;
+    line-height: normal;
+  }
+}
+.form-cadastro form .pergunta-fields input[type=radio] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  padding-top: 2px;
+  font-size: 0.7em;
+}
+@media (min-width: 992px) {
+  .form-cadastro form .pergunta-fields input[type=radio] + label {
+    font-size: 1em;
+  }
+}
+.form-cadastro form .pergunta-fields input[type=radio] + label:nth-of-type(1) {
+  margin-right: 20px;
+  font-family: Louis-BoldItalic;
+}
+.form-cadastro form .pergunta-fields input[type=radio] + label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+.form-cadastro form .pergunta-fields input[type=radio]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffb80e;
+  border-radius: 2px;
+}
+.form-cadastro form .button-wapper {
+  width: 100%;
+  text-align: center;
+}
+.form-cadastro form .button-wapper button {
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/btn-enviar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  font-size: 1.3em;
+  padding: 0 0 20px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .form-cadastro form .button-wapper button {
+    max-width: 330px;
+  }
+}
+
+@media (min-width: 768px) {
+  .info-promocao {
+    padding: 0;
+  }
+}
+.info-promocao img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .info-promocao img {
+    width: 115%;
+    float: left;
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+@media (min-width: 992px) {
+  .info-promocao img {
+    width: 100%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+
+.carro {
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .carro {
+    margin-top: -150px;
+  }
+}
+@media (min-width: 768px) {
+  .carro {
+    margin-top: -80px;
+  }
+}
+.carro img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .carro img {
+    width: 80%;
+    float: right;
+    margin-right: -110px;
+    margin-top: -45px;
+  }
+}
+
+.button-switch {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .button-switch {
+    display: none;
+  }
+}
+.button-switch .field {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.button-switch input[type=checkbox] {
+  display: none;
+}
+.button-switch input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 22px;
+  height: 40px;
+  border: 1px solid #4a4d52;
+  border-radius: 16px;
+}
+.button-switch input[type=checkbox] + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #4a4d52;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.button-switch input[type=checkbox]:checked + label:after {
+  -webkit-transform: translateY(18px);
+      -ms-transform: translateY(18px);
+          transform: translateY(18px);
+}
+.button-switch input[type=checkbox]:checked + label {
+  transition: all 0.4s;
+}

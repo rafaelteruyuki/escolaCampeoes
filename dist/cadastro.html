@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Promoção Escola de Campeões</title>
+
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="css/header-cadastro.css">
+		<link rel="stylesheet" href="css/home-cadastro.css">
+		<link rel="stylesheet" href="css/footer-cadastro.css">
+
+	</head>
+<body>
+	<!-- INICIO HEADER -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 logo">
+					<img src="img/logo-chevrolet.png" alt="Chevrolet">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-bg"></div>
+	<!-- FIM HEADER -->
+
+	<!-- INICIO HOME -->
+	<div class="home">
+		<article class="container">
+			<div class="row inicio-row">
+
+				<section class="col-xs-12 col-sm-7 col-lg-6 titulo-cadastro">
+					<img src="img/cadastro-titulo-mobile.png" alt="Cadastro" class="visible-xs">
+					<img src="img/cadastro-titulo.png" alt="Cadastro" class="hidden-xs">
+				</section>
+
+				<section class="col-xs-12 col-sm-5 col-lg-6 form-cadastro">
+					<form action="#" method="post">
+
+						<fieldset class="password-fields">
+							<label for="senha">senha
+								<input type="password" name="senha" id="senha">
+							</label><!--
+						--><label for="senha-confirma">confirmação de senha
+								<input type="password" name="senha-confirma" id="senha-confirma">
+							</label>
+							<p>*senha incorreta</p>
+						</fieldset>
+
+						<fieldset class="user-fields">
+							<label for="cep">cep
+								<input type="text" name="cep" pattern="[0-9]*" id="cep">
+							</label><!--
+						--><label for="endereco">endereco
+								<input type="text" name="endereco" id="endereco">
+							</label><!--
+						--><label for="numero">número
+								<input type="number" name="numero" pattern="[0-9]*" id="numero">
+							</label><!--
+						--><label for="complemento">complemento
+								<input type="text" name="complemento" id="complemento">
+							</label><!--
+						--><label for="bairro">bairro
+								<input type="text" name="bairro" id="bairro">
+							</label><!--
+						--><label for="cidade">cidade
+								<input type="text" name="cidade" id="cidade">
+							</label><!--
+						--><label for="estado">estado
+								<select name="estado">
+								<option value=""></option>
+								<option value="AC">AC</option>
+								<option value="AL">AL</option>
+								<option value="AP">AP</option>
+								<option value="AM">AM</option>
+								<option value="BA">BA</option>
+								<option value="CE">CE</option>
+								<option value="DF">DF</option>
+								<option value="ES">ES</option>
+								<option value="GO">GO</option>
+								<option value="MA">MA</option>
+								<option value="MT">MT</option>
+								<option value="MS">MS</option>
+								<option value="MG">MG</option>
+								<option value="PA">PA</option>
+								<option value="PB">PB</option>
+								<option value="PR">PR</option>
+								<option value="PE">PE</option>
+								<option value="PI">PI</option>
+								<option value="RJ">RJ</option>
+								<option value="RN">RN</option>
+								<option value="RS">RS</option>
+								<option value="RO">RO</option>
+								<option value="RR">RR</option>
+								<option value="SC">SC</option>
+								<option value="SP">SP</option>
+								<option value="SE">SE</option>
+								<option value="TO">TO</option>
+							</select>
+							</label>
+						</fieldset>
+
+						<fieldset class="declaracao-flieds">
+							<input type="checkbox" name="declaracao" id="declaracao">
+							<label for="declaracao">declaro que li e concordo com os termos do regulamento.</label>
+						</fieldset><!--
+
+						--><fieldset class="pergunta-fields">
+							<legend>qual promoção te dá um onix joy 0km na volta às aulas?</legend>
+
+							<input type="radio" name="pergunta" id="campeoes">
+							<label for="campeoes">escola de campeões</label>
+
+							<input type="radio" name="pergunta" id="outras">
+							<label for="outras">outras</label>
+						</fieldset>
+
+						<fieldset class="button-wapper">
+							<button type="submit">enviar</button>
+						</fieldset>
+					</form>
+				</section>
+
+				<section class="col-xs-12 col-sm-12 info-promocao">
+					<img src="img/info-promocao.png" alt="Promoção Escola de Campeões">
+				</section>
+
+				<section class="col-xs-12 col-sm-7 carro">
+					<img src="img/onix-home.png" alt="">
+				</section>
+
+			</div>
+		</article>
+	</div>
+	<!-- FIM HOME -->
+
+	<!-- INICIO CONTATO -->
+	<div class="contato">
+		<footer class="container">
+			<article class="row">
+				<section class="col-xs-12 col-sm-7 col-sm-push-1">
+					<p>Período de participação: 30/09/2016 a 15/12/2016. Somente participam da Promoção os interessados que realizarem compras à partir de R$200,00 (duzentos reais) em produtos objeto da Promoção, em uma Concessionária Chevrolet, mediante a efetiva emissão da respectiva Nota Fiscal de compras dentro do período de participação da Promoção. Consulte o Regulamento completo no site www.Servicopremiado.com.br. Imagens meramente ilustrativa. Certificado de Autorização CAIXA nº X-XXXX/2016.</p>
+				</section>
+				<section class="col-xs-12 col-sm-2 col-sm-push-1  logo-footer">
+					<img src="img/logo-chevrolet.png" alt="Chevrolet">
+				</section>
+			</article>
+		</footer>
+	</div>
+	<!-- FIM CONTATO -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/scripts-cadastro.js"></script>
+
+</body>
+</html>

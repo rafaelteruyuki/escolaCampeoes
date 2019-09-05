@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixins";
+
+.contato{
+	@include defaultFooter;
+	@media #{$sm}{
+		padding-top: 20px;
+		background-size: 15%;
+	}
+
+	@media #{$md}{
+		background-size: 10%;
+	}
+
+	p{
+		color: $branco;
+		font-size: 0.8em;
+		@media #{$sm}{
+			&::before{
+
+			}
+		}
+	}
+
+
+	.logo-footer{
+		text-align: center;
+		margin-top: 10px;
+		img{
+			margin:0;
+			display: inline-block;
+			width: 60%;
+			@media #{$sm}{
+				width: 100%;
+			}
+		}
+	}
+
+}

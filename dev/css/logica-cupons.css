@@ -1,0 +1,7 @@
+.menu-cupom .menu-logado::before {
+  background-image: url("../img/bg-menu-logado-cupon.png") !important;
+}
+
+.menu-perfil .menu-logado::before {
+  background-image: url("../img/bg-menu-logado-perfil.png") !important;
+}

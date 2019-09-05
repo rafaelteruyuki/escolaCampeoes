@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+@import "assets/bootstrap-grid";
+@import "assets/animate";
+@import "assets/customScrollbar";
+
+@import "fonts";
+
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	font-family: Louis-Regular;
+	color: $cinza;
+
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+
+input{
+	@include inputs;
+
+	&[type=number]{
+		-moz-appearance: textfield;
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button{
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+}
+
+fieldset{
+	margin: 0;
+	padding: 0;
+	border: none;
+}

@@ -1,0 +1,109 @@
+.faq {
+  background-image: url("../img/bg-faq.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .faq {
+    padding-top: 130px;
+  }
+}
+
+.louza {
+  background: url("../img/bg-louza_03.jpg"), url("../img/bg-louza_01.jpg"), url("../img/bg-louza_02.jpg");
+  background-position: bottom center, top center, top center;
+  background-size: 100%, 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  padding: 30px 35px;
+  box-shadow: 0px 2px 5px #000;
+}
+.louza h2 {
+  font-family: FiveBoroughsHandwriting;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .louza h2 {
+    font-size: 4em;
+    margin-left: 20px;
+  }
+}
+
+.accordion-wrapper {
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.accordion-item {
+  margin: 0;
+  font-family: chalkduster;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+}
+.accordion-item:last-of-type {
+  border-bottom: none;
+}
+.accordion-item .accordion-title {
+  display: table;
+  width: 100%;
+  cursor: pointer;
+}
+.accordion-item .accordion-title .title-index, .accordion-item .accordion-title .title-desc, .accordion-item .accordion-title .title-icon {
+  display: table-cell;
+  vertical-align: middle;
+}
+.accordion-item .accordion-title .title-index, .accordion-item .accordion-title .title-icon {
+  width: 10%;
+  text-align: center;
+}
+.accordion-item .accordion-title .title-index, .accordion-item .accordion-title .title-desc {
+  font-size: 1em;
+}
+@media (min-width: 768px) {
+  .accordion-item .accordion-title .title-index, .accordion-item .accordion-title .title-desc {
+    font-size: 1.5em;
+  }
+}
+.accordion-item .accordion-title .title-desc {
+  width: 80%;
+}
+.accordion-item .accordion-title .title-icon {
+  font-size: 1em;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+@media (min-width: 768px) {
+  .accordion-item .accordion-title .title-icon {
+    font-size: 2em;
+  }
+}
+.accordion-item .rotate {
+  -webkit-transform: rotate(-90deg) !important;
+      -ms-transform: rotate(-90deg) !important;
+          transform: rotate(-90deg) !important;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+.accordion-item .accordion-content {
+  margin: 5px 0;
+  padding: 0;
+  font-family: Louis-Regular;
+  font-size: 0.7em;
+  display: none;
+}
+@media (min-width: 768px) {
+  .accordion-item .accordion-content {
+    font-size: 1em;
+    padding: 0 10%;
+  }
+}

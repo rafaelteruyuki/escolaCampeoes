@@ -1,0 +1,90 @@
+// Mixin para formatar as fontes
+@mixin font-face($name){
+	$path: "../fonts/" + $name;
+	@font-face {
+		font-family: quote($name);
+		src: url(quote($path + "." + "eot")); // IE9 Compat Modes
+		src: url(quote($path + "." + "eot?#iefix")) format('embedded-opentype'), //IE6-IE8
+		url(quote($path + "." + "woff2")) format('woff2'), // Super Modern Browsers
+		url(quote($path + "." + "woff")) format('woff'), // Pretty Modern Browsers
+		url(quote($path + "." + "ttf")) format('truetype'), // Safari, Android, iOS
+		url(quote($path + "." + "svg#" + $name)) format('svg'); // Legacy iOS
+	}
+}
+@mixin inputs {
+	border: none;
+	background-color: $branco;
+	padding: 5px;
+	line-height: 1;
+	color: $cinza;
+	border-radius: 0;
+}
+
+@mixin clearfix {
+	display: block;
+	clear: both;
+}
+
+@mixin btn-basic(
+	$bg-color: $amarelo,
+	$color: $branco,
+	$txt-transform: inherit) {
+		border-radius: 0;
+		border: none;
+		padding: 10px;
+		line-height: 1;
+		text-transform: $txt-transform;
+		text-align: center;
+		background-color: $bg-color;
+		color: $color;
+		appearance: none;
+		-webkit-appearance: none;
+}
+
+@mixin btnImgAmarelo {
+	@include btn-basic(transparent, $branco, uppercase);
+	width: 100%;
+	height: 100px;
+	background-image: url('../img/btn-enviar.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	font-size: 1.3em;
+	padding: 0 0 20px;
+}
+
+@mixin btnImgCinza {
+	@include btn-basic(transparent, $branco, uppercase);
+	width: 100%;
+	height: 100px;
+	background-image: url('../img/btn-finalizar.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	font-size: 1.3em;
+	padding: 0 0 20px;
+}
+
+@mixin textShadow {
+	text-shadow: 0px 2px 5px #000;
+}
+
+@mixin defaultFooter {
+	width: 100%;
+	background:
+	linear-gradient(
+	rgba(73, 76, 82, .8),
+	rgba(73, 76, 82, .8)
+	),
+	url('../img/bg-home-mobile-pattern.jpg');
+	background-size: 25%;
+	background-repeat: repeat;
+	padding: 20px 0;
+	@supports (background-blend-mode: multiply){
+		background-image: url('../img/bg-home-mobile-pattern.jpg');
+		background-color: $cinza;
+		background-blend-mode: multiply;
+	}
+}

@@ -1,0 +1,221 @@
+.home {
+  background-image: url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .home {
+    background-image: url("../img/bg-home.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.inicio-row {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .informacao-sorteio {
+    background-size: 100% 100%;
+  }
+}
+.informacao-sorteio .row {
+  position: relative;
+}
+
+.mensagem {
+  padding-top: 20px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .mensagem {
+    padding-top: 50px;
+  }
+}
+
+.box-mensagem {
+  background-image: url("../img/bg-info-sorteio.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  padding: 20px;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+  max-width: 330px;
+  display: inline-block;
+  text-align: left;
+}
+.box-mensagem p {
+  font-family: Louis-BoldItalic;
+}
+.box-mensagem h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Louis-Italic;
+}
+.box-mensagem h2:first-child {
+  width: 70%;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 1.9em;
+  line-height: 1.2;
+}
+.box-mensagem h2:first-child span {
+  color: #ffb80e;
+}
+@media (min-width: 768px) {
+  .box-mensagem h2:first-child {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 1200px) {
+  .box-mensagem h2:first-child {
+    font-size: 2.5em;
+  }
+}
+.box-mensagem h2:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  right: -80px;
+  width: 2em;
+  height: 2em;
+  background-image: url("../img/icon-congrats.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  mix-blend-mode: multiply;
+}
+.box-mensagem h2:nth-of-type(2) {
+  width: 60%;
+  display: block;
+  margin: 0 auto 30px;
+}
+@media (min-width: 768px) {
+  .box-mensagem h2:nth-of-type(2) {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  .box-mensagem h2:nth-of-type(2) {
+    font-size: 2.4em;
+  }
+}
+.box-mensagem h2:nth-of-type(2) span:first-child {
+  font-size: 2em;
+  color: #ffb80e;
+  mix-blend-mode: multiply;
+  line-height: 1;
+}
+.box-mensagem h2:nth-of-type(2) span:nth-child(2) {
+  font-size: 0.85em;
+  line-height: 1.1;
+  display: inline-block;
+  text-indent: 12px;
+  margin-left: -4px;
+}
+.box-mensagem h2:nth-of-type(2) span:last-child {
+  font-size: 1.9em;
+  color: #ffb80e;
+  mix-blend-mode: multiply;
+  display: block;
+  line-height: 0.8;
+  margin-left: 0.8em;
+}
+
+.carro {
+  width: 100%;
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  margin-top: -20px;
+}
+
+.info-cadastro-nf {
+  width: 100%;
+}
+
+.premios-promocao {
+  overflow: visible;
+}
+.premios-promocao img {
+  width: 100%;
+  margin-top: -30px;
+}
+@media (min-width: 992px) {
+  .premios-promocao img {
+    margin-top: 0;
+  }
+}
+
+.button-switch {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .button-switch {
+    display: none;
+  }
+}
+.button-switch .field {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.button-switch input[type=checkbox] {
+  display: none;
+}
+.button-switch input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 22px;
+  height: 40px;
+  border: 1px solid #4a4d52;
+  border-radius: 16px;
+}
+.button-switch input[type=checkbox] + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #4a4d52;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.button-switch input[type=checkbox]:checked + label:after {
+  -webkit-transform: translateY(18px);
+      -ms-transform: translateY(18px);
+          transform: translateY(18px);
+}
+.button-switch input[type=checkbox]:checked + label {
+  transition: all 0.4s;
+}

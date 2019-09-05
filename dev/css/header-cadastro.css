@@ -1,0 +1,75 @@
+header, .header-bg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header, .header-bg, .logo,
+.btn-menu {
+  height: 70px;
+}
+@media (min-width: 768px) {
+  header, .header-bg, .logo,
+  .btn-menu {
+    height: 90px;
+  }
+}
+
+header {
+  z-index: 99;
+}
+@media (min-width: 992px) {
+  header div.row {
+    position: relative;
+  }
+}
+
+.header-bg {
+  z-index: 98;
+  background-color: rgba(34, 34, 34, 0.8);
+  transition: .5s;
+}
+@supports (mix-blend-mode: multiply) {
+  .header-bg {
+    background-color: #4a4d52;
+    mix-blend-mode: multiply;
+  }
+}
+.header-bg-open {
+  height: 275px;
+}
+@media (min-width: 768px) {
+  .header-bg-open {
+    height: 235px;
+  }
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .logo {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
+  }
+}
+.logo img {
+  height: 100%;
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .logo img {
+    margin-left: 0;
+  }
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  margin-left: 0;
+}

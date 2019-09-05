@@ -1,0 +1,164 @@
+.home {
+  background-image: url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .home {
+    background-image: url("../img/bg-home.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.inicio-row {
+  position: relative;
+}
+
+.cupons-sem {
+  padding-bottom: 0;
+}
+@media (min-width: 992px) {
+  .cupons-sem {
+    background-image: url("../img/bg-cupons.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .cupons-sem {
+    background-size: 100% 100%;
+  }
+}
+.cupons-sem .row {
+  position: relative;
+}
+.cupons-sem .titulo-cupons {
+  padding-top: 20px;
+}
+.cupons-sem .titulo-cupons img {
+  width: 100%;
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .cupons-sem .titulo-cupons img {
+    margin-right: 50%;
+    float: right;
+    max-width: inherit;
+  }
+}
+@media (min-width: 992px) {
+  .cupons-sem .titulo-cupons img {
+    width: 130%;
+    margin-right: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .cupons-sem .titulo-cupons img {
+    width: 135%;
+    margin-right: 90%;
+  }
+}
+.cupons-sem .qtd-cupons div {
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+@media (min-width: 992px) {
+  .cupons-sem .qtd-cupons div {
+    -webkit-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+.cupons-sem .qtd-cupons p {
+  display: inline-block;
+  width: calc(50% - 5px);
+  max-width: 200px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: Louis-BoldItalic;
+}
+@media (min-width: 768px) {
+  .cupons-sem .qtd-cupons p {
+    font-size: 2em;
+    width: calc(50% - 10px);
+  }
+}
+@media (min-width: 992px) {
+  .cupons-sem .qtd-cupons p {
+    font-size: 2.5em;
+    width: calc(50% - 10px);
+    max-width: inherit;
+  }
+}
+.cupons-sem .qtd-cupons p:first-child {
+  text-align: right;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .cupons-sem .qtd-cupons p:first-child {
+    margin-right: 20px;
+    line-height: 1.2;
+  }
+}
+.cupons-sem .qtd-cupons p:first-child span {
+  color: #ffb80e;
+}
+.cupons-sem .qtd-cupons p:last-child {
+  border: 3px solid rgba(255, 184, 14, 0.5);
+  border-radius: 5px;
+  background-color: rgba(74, 77, 82, 0.8);
+  padding: 10px 5px 10px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Louis-Italic;
+  line-height: 1;
+  box-shadow: inset 3px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+@supports (mix-blend-mode: multiply) {
+  .cupons-sem .qtd-cupons p:last-child {
+    border-color: rgba(255, 184, 14, 0.8);
+    background-color: #4a4d52;
+  }
+}
+.cupons-sem .qtd-cupons p:last-child span {
+  font-size: 2.2em;
+  font-family: Louis-BoldItalic;
+}
+.cupons-sem .carro-cupons {
+  margin-top: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+.cupons-sem .carro-cupons img {
+  width: 100%;
+  max-width: 370px;
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+@media (min-width: 768px) {
+  .cupons-sem .carro-cupons img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .cupons-sem .carro-cupons img {
+    -webkit-transform: translateY(30px) scale(-1, 1);
+        -ms-transform: translateY(30px) scale(-1, 1);
+            transform: translateY(30px) scale(-1, 1);
+    max-width: inherit;
+  }
+}

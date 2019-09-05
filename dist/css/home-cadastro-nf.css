@@ -1,0 +1,344 @@
+.home {
+  background-image: url("../img/bg-home-mobile-pattern.jpg");
+  background-size: 25%;
+  background-repeat: repeat;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .home {
+    background-image: url("../img/bg-home.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.inicio-row {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .cadastro-nf {
+    background-size: 100% 100%;
+  }
+}
+.cadastro-nf .row {
+  position: relative;
+}
+
+.carro {
+  width: 100%;
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  margin-top: -20px;
+}
+
+.info-cadastro-nf {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .form-cadastro-nf {
+    margin-top: 20px;
+  }
+}
+.form-cadastro-nf h2 {
+  text-transform: uppercase;
+  font-family: Louis-Italic;
+  opacity: 0.8;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf h2 {
+    font-size: 3em;
+  }
+}
+@supports (mix-blend-mode: multiply) {
+  .form-cadastro-nf h2 {
+    opacity: 1;
+    mix-blend-mode: multiply;
+  }
+}
+.form-cadastro-nf h2 span.first-word {
+  color: #ffb80e;
+}
+.form-cadastro-nf form {
+  width: 100%;
+}
+.form-cadastro-nf form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: Louis-BoldItalic;
+  color: #333333;
+  font-size: 0.9em;
+}
+.form-cadastro-nf form label span {
+  padding: 5px 8px;
+  background-color: #ffb80e;
+  display: inline-block;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+@supports (mix-blend-mode: multiply) {
+  .form-cadastro-nf form label span {
+    opacity: 1;
+    mix-blend-mode: multiply;
+  }
+}
+.form-cadastro-nf form label input {
+  width: 100%;
+  padding: 10px 13px;
+  font-family: Louis-Italic;
+  line-height: 1;
+}
+.form-cadastro-nf form label input[name=data-nf] {
+  background-image: url("../img/data.svg");
+  background-size: contain;
+  background-origin: content-box;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .dados-nf {
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .cod-participacao {
+    width: calc(50% - 10px);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.form-cadastro-nf form .cod-participacao legend {
+  font-family: Louis-BoldItalic;
+  color: #333333;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.form-cadastro-nf form .cod-participacao legend span {
+  padding: 5px 8px;
+  background-color: #ffb80e;
+  display: inline-block;
+  opacity: 0.8;
+  margin-right: 10px;
+}
+@supports (mix-blend-mode: multiply) {
+  .form-cadastro-nf form .cod-participacao legend span {
+    opacity: 1;
+    mix-blend-mode: multiply;
+  }
+}
+.form-cadastro-nf form .cod-participacao legend p {
+  display: inline-block;
+  margin: 0;
+}
+.form-cadastro-nf form .cod-participacao .increaser {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.form-cadastro-nf form .cod-participacao .increaser button {
+  border: none;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffb80e;
+  color: #333333;
+  text-align: center;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .cod-participacao .increaser button {
+    width: 35px;
+    height: 35px;
+  }
+}
+.form-cadastro-nf form .cod-participacao .increaser p {
+  display: inline-block;
+  margin: 0 10px;
+  height: 40px;
+  width: 50px;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #333333;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-family: Louis-BoldItalic;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .cod-participacao .increaser p {
+    height: 35px;
+    line-height: 1.8;
+  }
+}
+.form-cadastro-nf form .cod-participacao .codigos {
+  text-align: center;
+  height: 220px;
+  background-color: transparent;
+  padding: 0;
+}
+.form-cadastro-nf form .cod-participacao .codigos label {
+  display: inline-block;
+  width: 80%;
+  height: 40px;
+}
+.form-cadastro-nf form .cod-participacao .codigos span {
+  display: inline-block;
+  height: 100%;
+  margin-right: 5px;
+  width: 30px;
+  vertical-align: middle;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .cod-participacao .codigos span {
+    margin-right: 6px;
+    width: calc(20% - 3px);
+    line-height: 2.5;
+  }
+}
+.form-cadastro-nf form .cod-participacao .codigos input {
+  display: inline-block;
+  width: inherit;
+  vertical-align: middle;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .cod-participacao .codigos input {
+    width: calc(80% - 3px);
+    height: 100%;
+  }
+}
+.form-cadastro-nf form .cod-participacao .codigos .mCS-escolaCampeoes.mCSB_scrollTools {
+  right: -10px;
+}
+.form-cadastro-nf form .observacao {
+  font-size: 0.75em;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: Louis-BoldItalic;
+}
+@media (min-width: 992px) {
+  .form-cadastro-nf form .observacao {
+    font-size: 0.85em;
+    width: calc(50% - 10px);
+    margin-left: -50px;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+}
+.form-cadastro-nf form button[name=gerar-cupom] {
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100px;
+  background-image: url("../img/btn-enviar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  font-size: 1.3em;
+  padding: 0 0 20px;
+  width: calc(50% - 10px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.premios-promocao {
+  overflow: visible;
+}
+.premios-promocao img {
+  width: 100%;
+  margin-top: -30px;
+}
+@media (min-width: 992px) {
+  .premios-promocao img {
+    margin-top: 0;
+  }
+}
+
+.button-switch {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .button-switch {
+    display: none;
+  }
+}
+.button-switch .field {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.button-switch input[type=checkbox] {
+  display: none;
+}
+.button-switch input[type=checkbox] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 22px;
+  height: 40px;
+  border: 1px solid #4a4d52;
+  border-radius: 16px;
+}
+.button-switch input[type=checkbox] + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #4a4d52;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.button-switch input[type=checkbox]:checked + label:after {
+  -webkit-transform: translateY(18px);
+      -ms-transform: translateY(18px);
+          transform: translateY(18px);
+}
+.button-switch input[type=checkbox]:checked + label {
+  transition: all 0.4s;
+}

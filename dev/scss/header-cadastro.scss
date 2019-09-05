@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+
+@import "templates/header-default";
+
+.logo{
+	text-align: center;
+	img{
+		margin-left: 0;
+	}
+}
